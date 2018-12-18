@@ -2,7 +2,11 @@ This project was bootstrapped with [Create React App]
 
 # Movie listings challenge
 
-In the project directory, you can run:
+Install the project using
+
+### `npm install`
+
+Once installed, in the project directory, you can run:
 
 ### `npm start`
 
@@ -22,7 +26,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The project is doing the following
+##The app is doing the covering the following requirements
 
 - Using TMDb Movies Now Playing API to populate the movie listing
 - Using TMDb Movie genres API to fetch and display the genre titles
