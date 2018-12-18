@@ -31,12 +31,12 @@ It correctly bundles React in production mode and optimizes the build for the be
 - Using TMDb Movies Now Playing API to populate the movie listing
 - Using TMDb Movie genres API to fetch and display the genre titles
 - Using TMDb Image API to display the poster images
+- Applied minimum rating input with a range between 0 and 10, increments of 0.5 and a default set to 3.
 - Multiple genres input (checkboxes). Only contain genres from the TMDb API that are in the returned movie result set.
 
 
 - Display a list of movies, each showing their title, genres and poster image.
 - The movies are ordered by popularity (most popular first - popularity property).
 - Movies are filterable by multiple genres, the user has the ability to toggle movies depending on all of its assigned genres. For example if 'Action' and 'Drama' genres are selected listed movies will have both 'Action' and 'Drama' genres. A toggle filter is on the nav bar, clicking on filter will display the 'filter by genre' panel, the max height is set to 200px so it shows ok on mobile too, and is made scrollable to reach all the checkboxes.
-- The input API's should is only called once.
-
-- Sorry, i did'nt get time to plug the ratings feature in, but the rating filter implementation would be very similar to the the genre filter.
+- Movies are also filterable by their rating (vote_average property). i.e If rating is set to 5, you would see all movies with a rating of 5 or higher.
+- The input API's is only called once.

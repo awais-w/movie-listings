@@ -16,9 +16,9 @@ export default class Listing extends Component {
                     <div className="row">
                     
                         {/* Looping through the list of movies */}
-                        { movies.map((movie, i) => {
+                        { movies.map(movie => {
                             return (
-                                <div key={i} className="col m4 l3">
+                                <div key={movie.id} className="col m4 l3">
                                     <div className="card hoverable">
                                         <div className="card-image">
                                             <img src={`${IMAGE_PATH}${movie.poster_path}`} alt={movie.title} />

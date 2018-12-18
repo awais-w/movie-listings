@@ -23,6 +23,10 @@ nav {
         }
     }
     .filters-container {
+        select {
+            width: 140px;
+            height: auto;
+        }
         .genres {
             li label {
                 color: $lightColor;

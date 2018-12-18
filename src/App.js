@@ -23,17 +23,21 @@ class App extends Component {
     minimumRating: 3
   }
 
-  filterByGenre = (list) => {
+  handleFilters = (list, rating) => {
 
     let filteredArr = this.state.movies;
 
-    // filtering the movie list according to the selected genres
+    // filtering movie list by selected genres
     if (list) {
       list.map (g_id => filteredArr = filteredArr.filter( movie => {
           return movie.genre_ids.filter(g => (g === Number(g_id))).length;
         })
       );
     }
+    
+    // filtering movie list by selected rating
+    filteredArr = filteredArr.filter( movie => movie.vote_average >= rating);
+    this.setState({minimumRating:rating});
 
     // Populating filtered list in the state which passes through to the Listing component
     this.setState({genreFilteredList: filteredArr});
@@ -51,8 +55,9 @@ class App extends Component {
               // store the payload in component state
               this.setState({ movies });
               
-              //initializing the filterbyGenre method - its important to initialize it in order to pass the movie data to the listing component
-              this.filterByGenre();
+              //initializing the handleFilters method - its important to initialize it in order to pass the movie data to the listing component
+              this.handleFilters([], this.state.minimumRating);
+
           });
 
       // api call to get the genres
@@ -68,7 +73,7 @@ class App extends Component {
     return (
       <div className="App">
         {/* passing state and parent function to the Nav component */}
-        <Nav {...this.state} filterByGenre={this.filterByGenre}/>
+        <Nav {...this.state} handleFilters={this.handleFilters}/>
         {/* Passing state to Listing component */}
         <Listing {...this.state} />
       </div>
