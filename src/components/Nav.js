@@ -10,13 +10,17 @@ for (let x=0; x<=10; x+=0.5) {
 class Nav extends Component {
     constructor(props) {
         super(props);
+        // creating ref for the filterToggle
         this.filterToggler = React.createRef();
     }
+    
+    // preventing click away and redirecting to toggle filter method
     filterToggle(e) {
         e.preventDefault();
         this.toggleFilter();
     }
 
+    // to open and close filter panel
     toggleFilter () {
         const el = this.filterToggler.current;
         if (el) {
@@ -49,11 +53,12 @@ class Nav extends Component {
         e.target.checked ? 
             selectedGenres.push(e.target.id) :
             selectedGenres = selectedGenres.filter(id => id !== e.target.id);
-        // and then passing it down to the parent state
+        // and then passing it down to the parent
         this.props.handleFilters(selectedGenres, this.props.minimumRating);
     }
 
     handleRatingsFilter (e) {
+        // passing the selected rating value down to the parent
         this.props.handleFilters(selectedGenres, e.target.value);
     }
 
