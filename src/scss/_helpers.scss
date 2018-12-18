@@ -1,0 +1,109 @@
+.noMargin {margin:0}
+.noPad {padding:0}
+.noBullet {list-style: none}
+.noShadow {box-shadow: none !important; text-shadow: none !important}
+.lowercase {text-transform:lowercase}
+.uppercase {text-transform:uppercase}
+
+.mar {margin: $defaultGap}
+.marTop { margin-top: $defaultGap }
+.marBottom { margin-bottom: $defaultGap }
+.marLeft { margin-left: $defaultGap }
+.marRight { margin-right: $defaultGap }
+
+.mar5 { margin: 5px }
+.mar5Top { margin-top: 5px }
+.mar5Bottom { margin-bottom: 5px }
+.mar5Left { margin-left: 5px }
+.mar5Right { margin-right: 5px }
+
+.mar10 { margin: 10px }
+.mar10Top { margin-top: 10px }
+.mar10Bottom { margin-bottom: 10px }
+.mar10Left { margin-left: 10px }
+.mar10Right { margin-right: 10px }
+
+.mar20 { margin: 20px }
+.mar20Top { margin-top: 20px }
+.mar20Bottom { margin-bottom: 20px }
+.mar20Left { margin-left: 20px }
+.mar20Right { margin-right: 20px }
+
+.marTwice { margin: $defaultGap*2 }
+.marTopTwice { margin-top: $defaultGap*2 }
+.marBottomTwice { margin-bottom: $defaultGap*2 }
+.marLeftTwice { margin-left: $defaultGap*2 }
+.marRightTwice { margin-right: $defaultGap*2 }
+
+.pad { padding: $defaultGap }
+.padTop { padding-top: $defaultGap }
+.padBottom { padding-bottom: $defaultGap }
+.padLeft { padding-left: $defaultGap }
+.padRight { padding-right: $defaultGap }
+
+.pad5 { padding: 5px }
+.pad5Top { padding-top: 5px }
+.pad5Bottom { padding-bottom: 5px }
+.pad5Left { padding-left: 5px }
+.pad5Right { padding-right: 5px }
+
+.pad10 { padding: 10px }
+.pad10Top { padding-top: 10px }
+.pad10Bottom { padding-bottom: 10px }
+.pad10Left { padding-left: 10px }
+.pad10Right { padding-right: 10px }
+
+.pad20 { padding: 20px }
+.pad20Top { padding-top: 20px }
+.pad20Bottom { padding-bottom: 20px }
+.pad20Left { padding-left: 20px }
+.pad20Right { padding-right: 20px }
+
+.padTwice { padding: $defaultGap*2 }
+.padTopTwice { padding-top: $defaultGap*2 }
+.padBottomTwice { padding-bottom: $defaultGap*2 }
+.padLeftTwice { padding-left: $defaultGap*2 }
+.padRightTwice { padding-right: $defaultGap*2 }
+
+.relative { position: relative }
+.absolute { position: absolute }
+
+.hide {display: none}
+
+.lightWeight {font-weight: 300}
+.lightItalic {font-style: italic; font-weight: 300}
+.regularWeight {font-weight: 400}
+.boldWeight {font-weight: 4700}
+.heavyWeight {font-weight: 900}
+
+.darkColor {color: $defaultTextColor}
+.darkestColor {color: $darkest}
+.lightColor {color: $alternateTextColor}
+.accentColor {color: $accentTextColor}
+.highlightColor {color: $primaryColorDarker}
+
+.sizeXSmall {font-size: $fontXSmall;}
+.sizeSmall {font-size: $fontSmall;}
+.sizeNormal {font-size: $fontBase;}
+.sizeMedium {font-size: $fontMedium;}
+.sizeLarge {font-size: $fontLarge;}
+.sizeXlarge {font-size: $fontXlarge;}
+
+.textCenter {text-align: center}
+.textRight {text-align: right}
+.textLeft {text-align: left}
+
+.lineHeight100 {line-height: 100%}
+.lineHeight120 {line-height: 120%}
+
+.fullWidth {width:100%}
+
+.clr {clear:both}
+
+.hide {display: none}
+
+.fixed {position: fixed;}
+.absolute {position: absolute;}
+.relative {position: relative;}
+
+.clearfix { @include clearfix; }

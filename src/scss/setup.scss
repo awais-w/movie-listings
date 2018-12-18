@@ -1,0 +1,38 @@
+html { font-size: 62.5%; }
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $darkColor;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+b, .bold {
+    font-weight: 400;
+}
+
+strong, .bolder {
+    font-weight: 600;
+}
+
+a {
+    color: $primaryColorDarker;
+}
+
+.App {
+    overflow-x: hidden;
+}
+
+@media (min-width: 1200px) {
+    .mui-container {
+        max-width: 960px;
+    }
+}

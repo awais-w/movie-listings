@@ -1,0 +1,81 @@
+nav {
+    height: auto;
+    background: $primaryColor;
+    .site-title {
+        font-size: $fontLarge;
+        @include breakpoint(mobileonly) {
+            font-size: $fontMedium;
+        }
+    }
+    ul a {
+        font-size: $fontBase;
+    }
+    .nav-wrapper {
+        .filters-container {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .closed + div {
+            display: none;
+        }
+        .opened + div {
+            display: inline-block;
+        }
+    }
+    .filters-container {
+        .genres {
+            li label {
+                color: $lightColor;
+                margin-right: 20px;
+                span {
+                    padding-left: 25px;
+                    font-size: $fontBase;
+                    &:before {
+                        border-color: $lightColor;
+                    }
+                }
+            }
+
+        }
+        [type="checkbox"]:checked+span:not(.lever):before {
+            border-right: 2px solid $lightColor;
+            border-bottom: 2px solid $lightColor;
+        }
+    }
+}
+
+
+.card {
+    cursor: pointer;
+    .card-image {
+        .card-title {
+            width: 100%;
+            bottom: 0;
+            background: $darkest;
+            // background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,0.9) 20%);
+            opacity: 0.7;
+            line-height: 1;
+            padding: 10px;
+            font-size: $fontBase;
+            text-align: center;
+            font-weight: 400;
+        }
+    }
+    .card-content {
+        padding: 10px;
+    }
+    .genre-wrapper {
+        display: inline-block;
+        height: 100px;
+        li {
+            float: left;
+            font-size: $fontXSmall;
+            padding: 0 5px;
+            background-color: $primaryColorDarker;
+            color: $lightColor;
+            margin: 2px;
+            border-radius: 2px;
+        }
+    }
+    
+}

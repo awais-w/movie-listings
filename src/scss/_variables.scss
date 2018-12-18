@@ -1,0 +1,23 @@
+
+$primaryColor: #0288d1;
+$primaryColorDark: darken($primaryColor, 40);
+$primaryColorDarker: #01579b;
+$primaryColorLight: lighten($primaryColor, 15);
+$supportingColor1: darken($primaryColor, 15);
+
+$lightColor: #FFF;
+$darkColor: #333;
+$darkest: #000;
+
+$defaultTextColor: $darkColor;
+$alternateTextColor: $lightColor;
+$accentTextColor: lighten($darkColor, 20);
+
+$defaultGap: 15px;
+
+$fontXSmall: 1.2rem;
+$fontSmall: 1.6rem;
+$fontBase: 2rem;
+$fontMedium: 2.6rem;
+$fontLarge: 3.5rem;
+$fontXlarge: 5rem;

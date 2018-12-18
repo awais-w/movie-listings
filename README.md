@@ -1,6 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App]
 
-## Available Scripts
+# Movie listings challenge
 
 In the project directory, you can run:
 
@@ -22,23 +22,17 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+The project is doing the following
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Using TMDb Movies Now Playing API to populate the movie listing
+- Using TMDb Movie genres API to fetch and display the genre titles
+- Using TMDb Image API to display the poster images
+- Multiple genres input (checkboxes). Only contain genres from the TMDb API that are in the returned movie result set.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Display a list of movies, each showing their title, genres and poster image.
+- The movies are ordered by popularity (most popular first - popularity property).
+- Movies are filterable by multiple genres, the user has the ability to toggle movies depending on all of its assigned genres. For example if 'Action' and 'Drama' genres are selected listed movies will have both 'Action' and 'Drama' genres. A toggle filter is on the nav bar, clicking on filter will display the 'filter by genre' panel, the max height is set to 200px so it shows ok on mobile too, and is made scrollable to reach all the checkboxes.
+- The input API's should is only called once.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Sorry, i did'nt get time to plug the ratings feature in, but the rating filter implementation would be very similar to the the genre filter.
